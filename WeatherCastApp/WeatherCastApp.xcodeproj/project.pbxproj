@@ -12,6 +12,7 @@
 		B5ED186622864717001439E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ED186422864717001439E1 /* Main.storyboard */; };
 		B5ED186822864719001439E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5ED186722864719001439E1 /* Assets.xcassets */; };
 		B5ED186B22864719001439E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ED186922864719001439E1 /* LaunchScreen.storyboard */; };
+		B5ED187422865F24001439E1 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B5ED186722864719001439E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5ED186A22864719001439E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5ED186C22864719001439E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B5ED185F22864717001439E1 /* WeatherCastApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5ED187222865F0C001439E1 /* Cell */,
 				B5ED186022864717001439E1 /* AppDelegate.swift */,
 				B5ED186222864717001439E1 /* ViewController.swift */,
 				B5ED186422864717001439E1 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				B5ED186C22864719001439E1 /* Info.plist */,
 			);
 			path = WeatherCastApp;
+			sourceTree = "<group>";
+		};
+		B5ED187222865F0C001439E1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5ED186322864717001439E1 /* ViewController.swift in Sources */,
+				B5ED187422865F24001439E1 /* SummaryTableViewCell.swift in Sources */,
 				B5ED186122864717001439E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
