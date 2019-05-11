@@ -109,7 +109,7 @@
                                                     <outlet property="weatherImageView" destination="Ybe-CT-uJ4" id="WG8-TW-s0F"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="sWY-wy-kFd">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForecastTableViewCell" rowHeight="80" id="sWY-wy-kFd" customClass="ForecastTableViewCell" customModule="WeatherCastApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="208" width="398" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWY-wy-kFd" id="jUz-Tl-so9">
@@ -166,6 +166,13 @@
                                                         <constraint firstItem="x0i-86-uGK" firstAttribute="leading" secondItem="jUz-Tl-so9" secondAttribute="leadingMargin" id="zcj-nb-TLD"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="dateLabel" destination="xQt-SM-8DD" id="Tyd-c4-YMc"/>
+                                                    <outlet property="statusLabel" destination="vkf-tR-y6r" id="She-yn-fH2"/>
+                                                    <outlet property="temperatureLabel" destination="qIr-2V-og8" id="EUT-YE-kds"/>
+                                                    <outlet property="timeLabel" destination="sTJ-V9-i17" id="962-Dp-kXD"/>
+                                                    <outlet property="weatherImageLabel" destination="bdF-gu-tZ9" id="utt-w3-Qaw"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -195,6 +202,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="listTableView" destination="JrW-s1-J2W" id="8KA-OY-6XW"/>
+                        <outlet property="locationLabel" destination="qHF-fE-m5i" id="YEd-rT-RPQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

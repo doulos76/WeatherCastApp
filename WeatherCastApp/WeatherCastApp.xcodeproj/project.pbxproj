@@ -13,6 +13,7 @@
 		B5ED186822864719001439E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5ED186722864719001439E1 /* Assets.xcassets */; };
 		B5ED186B22864719001439E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5ED186922864719001439E1 /* LaunchScreen.storyboard */; };
 		B5ED187422865F24001439E1 /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */; };
+		B5ED187622866066001439E1 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187522866066001439E1 /* ForecastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		B5ED186A22864719001439E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5ED186C22864719001439E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		B5ED187522866066001439E1 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		B5ED18782286621A001439E1 /* SummaryApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SummaryApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		B5ED185F22864717001439E1 /* WeatherCastApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5ED1877228661F8001439E1 /* Prototype */,
 				B5ED187222865F0C001439E1 /* Cell */,
 				B5ED186022864717001439E1 /* AppDelegate.swift */,
 				B5ED186222864717001439E1 /* ViewController.swift */,
@@ -71,8 +75,17 @@
 			isa = PBXGroup;
 			children = (
 				B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */,
+				B5ED187522866066001439E1 /* ForecastTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B5ED1877228661F8001439E1 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED18782286621A001439E1 /* SummaryApi.playground */,
+			);
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ED187622866066001439E1 /* ForecastTableViewCell.swift in Sources */,
 				B5ED186322864717001439E1 /* ViewController.swift in Sources */,
 				B5ED187422865F24001439E1 /* SummaryTableViewCell.swift in Sources */,
 				B5ED186122864717001439E1 /* AppDelegate.swift in Sources */,
