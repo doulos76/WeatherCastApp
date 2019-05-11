@@ -75,4 +75,3 @@ if let url = URL(string: apiUrl) {
   
   task.resume()
 }
-

@@ -27,6 +27,7 @@
 		B5ED187322865F24001439E1 /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		B5ED187522866066001439E1 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		B5ED18782286621A001439E1 /* SummaryApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SummaryApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B5ED18792286705C001439E1 /* ForecastApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ForecastApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B5ED18782286621A001439E1 /* SummaryApi.playground */,
+				B5ED18792286705C001439E1 /* ForecastApi.playground */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
