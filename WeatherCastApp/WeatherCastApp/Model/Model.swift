@@ -174,7 +174,20 @@ class WeatherDataSource {
   func fetch(location: CLLocation, completion: @escaping () -> ()) {
     group.enter()
     workQueue.async {
-      
+      self.fetchSummary(lat: location.coordinate.latitude, lon: location.coordinate.longitude, completion: {
+        self.group.leave()
+      })
+    }
+    
+    group.enter()
+    workQueue.async {
+      self.fetchForecast(lat: location.coordinate.latitude, lon: location.coordinate.longitude, completion: {
+        self.group.leave()
+      })
+    }
+    
+    group.notify(queue: DispatchQueue.main) {
+      completion()
     }
   }
   
@@ -211,6 +224,7 @@ class WeatherDataSource {
       do {
         let decoder = JSONDecoder()
         self.summary = try decoder.decode(WeatherSummary.self, from: data)
+        print(self.summary)
       } catch {
         print(error)
       }
@@ -259,6 +273,7 @@ class WeatherDataSource {
       do {
         let decoder = JSONDecoder()
         let forecast = try decoder.decode(Forecast.self, from: data)
+        print("\n================[\(forecast)]================\n")
         if let list = forecast.weather.forecast3days.first?.fcst3hour.arrayRepresentation() {
           self.forecastList = list
         }

@@ -16,6 +16,7 @@
 		B5ED187622866066001439E1 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187522866066001439E1 /* ForecastTableViewCell.swift */; };
 		B5ED187E228674E3001439E1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187D228674E3001439E1 /* Model.swift */; };
 		B5ED188022867D27001439E1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED187F22867D27001439E1 /* Common.swift */; };
+		B5ED18832287063D001439E1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED18822287063D001439E1 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B5ED18792286705C001439E1 /* ForecastApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ForecastApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B5ED187D228674E3001439E1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5ED187F22867D27001439E1 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B5ED18822287063D001439E1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				B5ED187B2286749F001439E1 /* View */,
 				B5ED187C228674A7001439E1 /* Controller */,
 				B5ED1877228661F8001439E1 /* Prototype */,
+				B5ED188122870608001439E1 /* Extension */,
 				B5ED186422864717001439E1 /* Main.storyboard */,
 				B5ED186722864719001439E1 /* Assets.xcassets */,
 				B5ED186922864719001439E1 /* LaunchScreen.storyboard */,
@@ -118,6 +121,14 @@
 				B5ED186222864717001439E1 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5ED188122870608001439E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED18822287063D001439E1 /* UIViewController+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				B5ED187E228674E3001439E1 /* Model.swift in Sources */,
 				B5ED187622866066001439E1 /* ForecastTableViewCell.swift in Sources */,
 				B5ED186322864717001439E1 /* ViewController.swift in Sources */,
+				B5ED18832287063D001439E1 /* UIViewController+Extensions.swift in Sources */,
 				B5ED187422865F24001439E1 /* SummaryTableViewCell.swift in Sources */,
 				B5ED188022867D27001439E1 /* Common.swift in Sources */,
 				B5ED186122864717001439E1 /* AppDelegate.swift in Sources */,
