@@ -47,7 +47,7 @@
                                         <rect key="frame" x="8" y="112" width="398" height="742"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SummaryTableViewCell" rowHeight="180" id="qMb-y9-NCP" customClass="SummaryTableViewCell" customModule="WeatherCastApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SummaryTableViewCell" rowHeight="180" id="qMb-y9-NCP" customClass="SummaryTableViewCell" customModule="WeatherCastApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="398" height="180"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qMb-y9-NCP" id="3b2-Bm-NTS">
@@ -109,7 +109,7 @@
                                                     <outlet property="weatherImageView" destination="Ybe-CT-uJ4" id="WG8-TW-s0F"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForecastTableViewCell" rowHeight="80" id="sWY-wy-kFd" customClass="ForecastTableViewCell" customModule="WeatherCastApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ForecastTableViewCell" rowHeight="80" id="sWY-wy-kFd" customClass="ForecastTableViewCell" customModule="WeatherCastApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="208" width="398" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWY-wy-kFd" id="jUz-Tl-so9">
@@ -126,13 +126,13 @@
                                                                         <constraint firstAttribute="height" constant="40" id="kcV-rJ-EHf"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-tR-y6r">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-tR-y6r">
                                                                     <rect key="frame" x="50" y="0.0" width="71" height="40"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIr-2V-og8">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIr-2V-og8">
                                                                     <rect key="frame" x="131" y="0.0" width="47.5" height="40"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                                                     <nil key="textColor"/>
@@ -160,7 +160,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="x0i-86-uGK" firstAttribute="top" secondItem="jUz-Tl-so9" secondAttribute="topMargin" id="1JM-ge-52h"/>
-                                                        <constraint firstItem="voo-cc-sUK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x0i-86-uGK" secondAttribute="trailing" constant="154" id="E50-To-RoN"/>
+                                                        <constraint firstItem="voo-cc-sUK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x0i-86-uGK" secondAttribute="trailing" constant="10" id="E50-To-RoN"/>
                                                         <constraint firstAttribute="trailing" secondItem="voo-cc-sUK" secondAttribute="trailing" constant="10" id="ZyW-Zc-kVA"/>
                                                         <constraint firstItem="voo-cc-sUK" firstAttribute="centerY" secondItem="jUz-Tl-so9" secondAttribute="centerY" id="okO-DZ-IEO"/>
                                                         <constraint firstItem="x0i-86-uGK" firstAttribute="leading" secondItem="jUz-Tl-so9" secondAttribute="leadingMargin" id="zcj-nb-TLD"/>

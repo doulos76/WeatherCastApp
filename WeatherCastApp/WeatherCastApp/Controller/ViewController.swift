@@ -36,8 +36,7 @@ class ViewController: UIViewController {
     return formatter
   }()
   
-  // MARK:- View Life Cycle
-  
+  // MARK:- View Life Cycle  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -151,12 +150,12 @@ extension ViewController: UITableViewDataSource {
         let maxStr = tempFormatter.string(for: max) ?? "-"
         let minStr = tempFormatter.string(for: min) ?? "-"
 
-        cell.minMaxLabel.text = "최대 \(maxStr) 최소 \(minStr)"
+        cell.minMaxLabel.text = "최대 \(maxStr)º 최소 \(minStr)º"
 
         let current = Double(data.temperature.tc) ?? 0.0
         let currentStr = tempFormatter.string(for: current) ?? "-"
 
-        cell.currentTemperatureLabel.text = "\(currentStr)"
+        cell.currentTemperatureLabel.text = "\(currentStr)º"
       }
       return cell
     }
@@ -170,7 +169,7 @@ extension ViewController: UITableViewDataSource {
     cell.weatherImageLabel.image = UIImage(named: target.skyCode)
     cell.statusLabel.text = target.skyName
     let tempStr = tempFormatter.string(for: target.temperature) ?? "-"
-    cell.temperatureLabel.text = "\(tempStr)"
+    cell.temperatureLabel.text = "\(tempStr)º"
     return cell
   }
 }
